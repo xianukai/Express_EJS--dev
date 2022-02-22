@@ -1,0 +1,16 @@
+<%- include('./_header') %>
+    <div class="container">
+      <div class="container-header">
+        <h1>積ん読リスト作成</h1>
+      </div>
+      <div class="item-form-wrapper">
+        <p class="form-label">書籍名</p>
+        <form action="/create" method="post">
+          <input type="text" name="itemName">
+          <input type="submit" value="作成する">
+        </form>
+      </div>
+      <a href="/index" class="cancel-button"></span>もどる</a>
+    </div>
+    
+<%- include('./_footer') %>
